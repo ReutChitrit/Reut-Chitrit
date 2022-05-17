@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Assignment 1</title>
+    <link rel="stylesheet" href="..//static/cookiesStyler.css">
+    <script defer src="..//static/CookiesJS.js"></script>
 </head>
-<body>
-    <center> 
-        <h1 style="color: rgb(128, 0, 122);border: 2px solid rgb(73, 196, 221);margin: 10px; padding: 4px;">Reut's Homepage</h1>
-        <p style="color: rgb(119, 7, 7); border: 2px solid rgb(50, 110, 167);margin: 10px; padding: 10px; font-size: large;">
-            This is the first assignment in our Web class. <br>
-            
-        </p>
-        <img src="../static/mm-cookies.jpg" alt="cookies" width="180"">
-        </center>
 
+
+
+<header id = header>
+        <nav>
+          <ul class="nav_links">
+           <li><a href = "homepage.html"> Homepage</a></li>
+           <li><a href = "Contact Us.html"> Contact Us</a></li>
+          </ul>   
+        </nav>
+
+        <a class = "cta" href ="#"><button>Reut's Cookie Shop</button></a>
+ </header>
+        
+
+ <body>
+
+    <div id="containter">
+    <div id =centerHome> 
+        <h1  class=title-Homepage >Cookie Shop Homepage</h1>
+        <p class = p1> Welcome to our cookie shop. Enjoy! <br> </p>
+        <img class="cookie1" src="../static/mm-cookies.jpg" alt="cookies">
+    </div>
 
     
-    <nav> 
-<div>
-    <h3 style="border: 2px solid rgb(89, 99, 108);margin: 10px; padding: 6px;">Navigator Bar</h3>
-    <a href="Contact Us.html"> Contact Us</a>
+    <div id =footerHome >
+        <h3 class=Homepage> There's nothing better than a good cookie... </h3>
+    </div>
+   
+    <form action="" method="get">
 
+        <input id = ingredient type="ingredient" value="What's so special?" onclick = "PrintAfterSubmit()"><br> <br>
+        <p id = "Text1"></p><br> 
+    </form>
+    
 </div>
-    </nav>
 </body>
+
 </html>

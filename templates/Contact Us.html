@@ -1,26 +1,44 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContactUs</title>
-</head>
-<body>
-    <center>
-        <h1  style="color: rgb(205, 107, 167); border: 2px solid rgb(0, 106, 135);margin: 30px; padding:10px;"> Contact Us </h1> 
-        <form action="" method="get">
-        <img src="../static/mm-cookies.jpg" alt="cookies" width="140""> <br> <br>
+    <link rel="stylesheet" href="..//static/cookiesStyler.css">
+    <script defer src="..//static/CookiesJS.js"></script>
 
-        <label for="cookieType" style="color: rgb(218, 40, 206);border: 1px solid rgb(100, 165, 225);margin: 20px; padding:3px;">Favorite cookie type:</label> 
+</head>
+
+
+<header id="header">
+    <nav>
+    <ul class="nav_links">
+    <li><a href = "homepage.html" > Homepage</a></li>
+    <li><a href = "Contact Us.html"> Contact Us</a></li>
+    </ul>
+    </nav>
+    <a class = "cta" href ="#"><button>Reut's Cookie Shop</button></a>
+</header>
+
+<body>
+    <div id="containter">
+
+    <div id ="center">
+        <h1 class=title-ContactUs > Contact Us </h1> 
+     <form action="" method="get">
+        <img class = cookie1 src="../static/mm-cookies.jpg" alt="cookies"> <br> <br>
+
+        <label class = label for="cookieType">Favorite cookie type:</label> 
         <input type="text" name="cookieType" id="cookieType" > <br> <br>
-        <label for="topping" style="color:  rgb(212, 16, 137);border: 1px solid rgb(100, 165, 225);margin: 20px; padding:3px;">Favorite topping:</label>
+        <label class = label for="topping" >Favorite topping:</label>
         <input type="text" name="topping" id="topping" required> <br> <br>
-        <label for="texture" style="color:  rgb(212, 16, 137);border: 1px solid rgb(100, 165, 225);margin:10px; padding:3px;"> Favorite cookie texture: </label> <br> <br>
+        <label class = label for="texture"> Favorite cookie texture: </label> 
         <input type="text" name="texture" id="texture"> <br> <br>
-        <label for="PhoneNumber" style="color:  rgb(236, 21, 193);border: 1px solid rgb(100, 165, 225);margin: 20px; padding:3px;">Customer Phone Number:</label>
+        <label class = label for="PhoneNumber" >Customer Phone Number:</label>
         <input type="tel" name="PhoneNumber" id="PhoneNumber" required pattern="[0][5][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9]" > <br> <br>
 
-        <label for="flavor" style="color:  rgb(234, 15, 197);border: 1px solid rgb(100, 165, 225);margin: 20px; padding:3px;">Favorite flavor:</label>
+        <label class = label for="flavor"> Favorite flavor:</label>
         <input list= flavorList name="flavor" id="flavor" > 
         <datalist id= "flavorList">
             <option value = "chocolate">
@@ -28,20 +46,16 @@
             <option value = "velvet">
         </datalist> <br> <br>
 
-        <label for="additionalInfo" style="color:  rgb(240, 23, 156);border: 1px solid rgb(100, 165, 225);margin: 20px; padding:3px;">Additional information:</label> <br> <br>
-        <textarea id="additional" name="additional" placeholder="Add requests" style="height:90px;width: 250px;" ;required minlength="10" maxlength="200"></textarea>  <br> <br>
-        
-        <input type="submit" name="submit" id="submit"> <br> <br>
-    </center>
+        <label class = label for="additionalInfo">Additional information:</label> <br> <br>
+        <textarea id="additional" name="additional" placeholder="Add requests" ;required minlength="10" maxlength="200"></textarea>  <br> <br>
+        <input id = submitButton type="submit" value="submit"> <br> <br>
 
-    <nav> 
-        <div>
-            <h3 style="border: 2px solid rgb(231, 16, 198);margin: 10px; padding: 6px;">Navigator Bar</h3>
-            <a href="homepage.html"> Back to Home Page</a>
-        </div>
-    
-    </nav>
+     </form>
+     <div ><p id=" timerMessage" >Submit in the next <span id="time">01:00</span> seconds and get a free cookie, on the house!</p></div>
 
-    </form>
+    </div>
+
+
+   </div>
 </body>
 </html>
